@@ -9,7 +9,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.min.js"></script>
   <script  id="day-template" type="text/x-handlebars-template">
-    <li data-date="{{machineDate}}">{{ date }}</li>
+    <div class="box" data-date="{{ machineDate }}" >
+      <span>{{ date }}</span>
+    </div>
   </script>
   <script src="script.js" charset="utf-8"></script>
   <link rel="stylesheet" href="style.css">
@@ -26,10 +28,7 @@
     <h1 id="month-name"></h1>
   </header>
     <div class="container">
-      <ul id="lista">
 
-
-      </ul>
     </div>
 
 

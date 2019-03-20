@@ -62,7 +62,7 @@ function machine(year, month, date) {
 
 function printDays(year, month) {
   var dayCount = monthDayCount(year, month);
-  var ulDayList = $("#lista");
+  var cont = $(".container");
   var template = $("#day-template").html();
   var compiled = Handlebars.compile(template);
 
@@ -75,7 +75,7 @@ function printDays(year, month) {
     }
 
     var liDay = compiled(template)
-    ulDayList.append(liDay)
+    cont.append(liDay)
 
   }
 }
@@ -115,10 +115,10 @@ function addHolidays(holidays) {
     var holiday = holidays[i];
     var holiMachine = holiday.date;
     var holiName = holiday.name;
-    var selector = "li[data-date= '"  + holiMachine +  "']"
+    var selector = "div[data-date= '"  + holiMachine +  "']"
     console.log(selector);
     var liHoli = $(selector)
-    // liHoli.text(liHoli.text() + " - " + holiName)
+    liHoli.text(liHoli.text() + " - " + holiName)
     liHoli.addClass("holiday")
   }
 
