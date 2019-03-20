@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.min.js"></script>
+  <script  id="day-template" type="text/x-handlebars-template">
+    <li data-date="{{machineDate}}">{{ date }}</li>
+  </script>
+  <script src="script.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+    <title></title>
+  </head>
+  <body>
+    <!-- <input id="my-btn" type="button" name="" value="CLICCA DAI">
+    <br>
+
+    <h1 class="text"></h1> -->
+    <header>
+    <h1 id="month-name"></h1>
+  </header>
+    <div class="container">
+      <ul id="lista">
+
+
+      </ul>
+    </div>
+
+
+
+    <!-- <div class="container">
+      <div class="box">
+        <span data-date="18-01-01">{{ machineDate }}</span>
+      </div>
+    </div> -->
+
+
+
+
+
+  </body>
+</html>
