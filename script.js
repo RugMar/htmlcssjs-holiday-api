@@ -124,12 +124,49 @@ function addHolidays(holidays) {
 
 }
 
+function getNextMonth(year, month) {
+  month++;
+  piallaTot()
+  printTitle(year, month);
+  printDays(year, month);
+  printHolidays(year, month);
+  return month
+}
+
+function getPreviousMonth(year, month) {
+  month--;
+  piallaTot()
+  printTitle(year, month);
+  printDays(year, month);
+  printHolidays(year, month);
+  return month
+}
+
+function piallaTot() {
+var h1 = $("#month-name")
+h1.text("")
+var li = $(".box")
+li.remove()
+}
+
 function init() {
   var year = 2018;
   var month = 0;
   printTitle(year, month);
   printDays(year, month);
   printHolidays(year, month);
+  var click = $("#next")
+  click.click(function() {
+    if (month < 11) {
+      month = getNextMonth(year, month)
+    }
+  })
+  var clicka = $("#previous")
+  clicka.click(function() {
+    if (month > 0) {      
+      month = getPreviousMonth(year, month)
+    }
+    })
 }
 
 $(document).ready(init)

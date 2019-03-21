@@ -6,14 +6,12 @@
   font-family: sans-serif;
 }
 
-.holiday{
-  color: orange;
-  font-size: 12px;
-  float: left;
-  padding: 10px;
+.header{
+  display: flex;
+  /* //perchè non flexa? */
 }
 
-h1{
+h1,i{
   color: orange;
   margin-left: 50%;
   margin-top: 1%;
@@ -34,8 +32,9 @@ h1{
   height: 26%;
   border: 0.5px solid grey;
   border-radius: 5px;
-  background-color: #F0F0F0;
-  opacity: 0.8;
+  background: rgba(200, 200, 200, 0.2)
+
+  /* opacity: 0.8; */
   /* display: flex;
   align-items: center; */
 
@@ -48,4 +47,12 @@ h1{
   float: left;
   padding: 10px;
 
+}
+
+.holiday{
+  background-color: rgba(255, 150, 0, 0.55);
+  /* opacity: 0.6; */
+  font-size: 12px;
+  float: left;
+  padding: 10px;
 }
